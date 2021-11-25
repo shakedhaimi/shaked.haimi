@@ -1,0 +1,57 @@
+h1{
+    color: #1c7e97;
+    margin: 20px;
+}
+/* GRID */
+#gridContainer {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'left main right'
+    'left main right';
+}
+
+#header {
+    grid-area: header;
+    height: 100px;
+    width: 1043px;
+    padding:20px;
+    margin: 10px;
+    background-color: #71cee5;
+    color: #104856;
+}
+
+#left {
+    grid-area: left;
+    height: 200px;
+    width: 200px;
+    padding:20px;
+    margin: 10px;
+    background-color: #93daeb;
+    color: #104856;
+}
+#right {
+    grid-area: right;
+    height: 200px;
+    width: 200px;
+    padding:20px;
+    margin: 10px;
+    background-color: #93daeb;
+    color: #104856;
+}
+
+#center {
+    grid-area: main;
+    height: 200px;
+    width: 200px;
+    padding:20px;
+    margin: 10px;
+    background-color: #93daeb;
+    color: #104856;
+}
+
+@media only screen and (max-width:300px) {
+    h1 {
+       color: yellow
+    }
+}
